@@ -1,0 +1,602 @@
+ERROR - 2025-07-22 14:33:00 --> Error en create() | Invalid file: "layouts/header.php"
+ERROR - 2025-07-22 22:23:58 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'prueba_tecnica', 3306, '', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\UserController.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\UserController->index()
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\UserController.php(35): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\UserController->index()
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#11 {main}
+CRITICAL - 2025-07-22 22:23:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserController.php(35): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+ERROR - 2025-07-22 22:24:05 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'prueba_tecnica', 3306, '', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\UserController.php(35): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\UserController->index()
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\UserController.php(35): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\UserController->index()
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#11 {main}
+CRITICAL - 2025-07-22 22:24:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(243): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(641): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\UserController.php(35): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+ERROR - 2025-07-22 22:35:52 --> Error en store(): Undefined property: App\Controllers\UserController::$db
+ERROR - 2025-07-22 22:38:49 --> Errores de validación: {"email":"The email field must contain a unique value."}
+ERROR - 2025-07-22 22:39:29 --> Error en store(): Undefined property: App\Controllers\UserController::$db
+ERROR - 2025-07-22 22:43:26 --> Error while editing user [1] | Undefined variable $user | App\Controllers\UserController::edit
+ERROR - 2025-07-22 22:43:31 --> Error while editing user [1] | Undefined variable $user | App\Controllers\UserController::edit
+ERROR - 2025-07-22 22:45:41 --> Error while editing user [1] | Undefined array key "nombre" | App\Controllers\UserController::edit
+ERROR - 2025-07-22 22:45:45 --> Error while editing user [1] | Undefined array key "nombre" | App\Controllers\UserController::edit
+ERROR - 2025-07-22 22:46:25 --> Error while editing user [3] | Undefined array key "nombre" | App\Controllers\UserController::edit
+ERROR - 2025-07-22 22:59:41 --> mysqli_sql_exception: Unknown column 'correo' in 'where clause' in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@...', 'correo', Array, NULL, 'email')
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@...', Array, Array)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\UserController.php(227): CodeIgniter\Controller->validate(Array)
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#14 {main}
+CRITICAL - 2025-07-22 22:59:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `correo` = :correo:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@gmail.com', 'correo', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(227): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+CRITICAL - 2025-07-22 22:59:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correo' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `correo` = :correo:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@gmail.com', 'correo', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@gmail.com', [...], [...])
+ 7 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\UserController.php(227): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+CRITICAL - 2025-07-22 22:59:41 --> [Caused by] mysqli_sql_exception: Unknown column 'correo' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `correo` = :correo:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@gmail.com', 'correo', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\UserController.php(227): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+ERROR - 2025-07-22 23:00:06 --> mysqli_sql_exception: Unknown column 'correo' in 'where clause' in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@...', 'correo', Array, NULL, 'email')
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@...', Array, Array)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Controller.php(154): CodeIgniter\Validation\Validation->run()
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\UserController.php(227): CodeIgniter\Controller->validate(Array)
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#14 {main}
+CRITICAL - 2025-07-22 23:00:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correo' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `correo` = :correo:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@gmail.com', 'correo', [...], null, 'email')
+ 4 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@gmail.com', [...], [...])
+ 5 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH\Controllers\UserController.php(227): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+CRITICAL - 2025-07-22 23:00:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'correo' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `correo` = :correo:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@gmail.com', 'correo', [...], null, 'email')
+ 6 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@gmail.com', [...], [...])
+ 7 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 8 APPPATH\Controllers\UserController.php(227): CodeIgniter\Controller->validate([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+CRITICAL - 2025-07-22 23:00:06 --> [Caused by] mysqli_sql_exception: Unknown column 'correo' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `users`
+WHERE `correo` = \'teclasayers951@gmail.com\'
+AND `id` != \'4\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `correo` = :correo:
+AND `id` != :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\StrictRules\Rules.php(227): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(328): CodeIgniter\Validation\StrictRules\Rules->is_unique('teclasayers951@gmail.com', 'correo', [...], null, 'email')
+ 7 SYSTEMPATH\Validation\Validation.php(200): CodeIgniter\Validation\Validation->processRules('email', 'email', 'teclasayers951@gmail.com', [...], [...])
+ 8 SYSTEMPATH\Controller.php(154): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\UserController.php(227): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\UserController->update('4')
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+ERROR - 2025-07-22 23:09:40 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:41 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:41 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:41 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:41 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:41 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:42 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:42 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:42 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:42 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:42 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:43 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:43 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:43 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:43 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:44 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:44 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:44 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:44 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:45 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:46 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:46 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:46 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:49 --> Error while showing user [4] | Undefined variable $rol | App\Controllers\UserController::show
+ERROR - 2025-07-22 23:09:54 --> Error while showing user [1] | Undefined variable $rol | App\Controllers\UserController::show
+CRITICAL - 2025-07-22 23:39:16 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4>Iniciar Sesión</h4>
+                    </div>
+                    <div class="card-body">
+                        
+                        <form method="post" action="http://localhost:8080/login">
+                            <input type="hidden" name="csrf_test_name" value="0f52a61477977e7c9e8718c558af3086">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        ¿No tienes cuenta? <a href="http://localhost:8080/register">Registrarte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>"
+in SYSTEMPATH\Router\Router.php on line 495.
+ 1 SYSTEMPATH\Router\Router.php(495): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4>Iniciar Sesión</h4>
+                    </div>
+                    <div class="card-body">
+                        
+                        <form method="post" action="http://localhost:8080/login">
+                            <input type="hidden" name="csrf_test_name" value="0f52a61477977e7c9e8718c558af3086">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        ¿No tienes cuenta? <a href="http://localhost:8080/register">Registrarte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>')
+ 2 SYSTEMPATH\Router\Router.php(202): CodeIgniter\Router\Router->checkRoutes('/')
+ 3 SYSTEMPATH\CodeIgniter.php(825): CodeIgniter\Router\Router->handle('/')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+CRITICAL - 2025-07-22 23:39:24 --> CodeIgniter\Router\Exceptions\RouterException: The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4>Iniciar Sesión</h4>
+                    </div>
+                    <div class="card-body">
+                        
+                        <form method="post" action="http://localhost:8080/login">
+                            <input type="hidden" name="csrf_test_name" value="0f52a61477977e7c9e8718c558af3086">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        ¿No tienes cuenta? <a href="http://localhost:8080/register">Registrarte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>"
+in SYSTEMPATH\Router\Router.php on line 495.
+ 1 SYSTEMPATH\Router\Router.php(495): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4>Iniciar Sesión</h4>
+                    </div>
+                    <div class="card-body">
+                        
+                        <form method="post" action="http://localhost:8080/login">
+                            <input type="hidden" name="csrf_test_name" value="0f52a61477977e7c9e8718c558af3086">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" name="email" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" name="password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+                        </form>
+                    </div>
+                    <div class="card-footer text-center">
+                        ¿No tienes cuenta? <a href="http://localhost:8080/register">Registrarte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>')
+ 2 SYSTEMPATH\Router\Router.php(202): CodeIgniter\Router\Router->checkRoutes('/')
+ 3 SYSTEMPATH\CodeIgniter.php(825): CodeIgniter\Router\Router->handle('/')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\OneDrive\\Documents\\prueba_tecnica\\public\\index.php')
+ERROR - 2025-07-22 23:45:25 --> mysqli_sql_exception: Column 'telefono' cannot be null in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\AuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\AuthController->doRegister()
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#13 {main}
+ERROR - 2025-07-22 23:45:25 --> Error en registro: Column 'telefono' cannot be null
+ERROR - 2025-07-22 23:45:28 --> mysqli_sql_exception: Column 'telefono' cannot be null in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\AuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\AuthController->doRegister()
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#13 {main}
+ERROR - 2025-07-22 23:45:28 --> Error en registro: Column 'telefono' cannot be null
+ERROR - 2025-07-22 23:48:43 --> mysqli_sql_exception: Column 'telefono' cannot be null in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\AuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\AuthController->doRegister()
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#13 {main}
+ERROR - 2025-07-22 23:48:43 --> Error en registro: Column 'telefono' cannot be null
+ERROR - 2025-07-22 23:49:04 --> mysqli_sql_exception: Column 'telefono' cannot be null in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\AuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\AuthController->doRegister()
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#13 {main}
+ERROR - 2025-07-22 23:49:04 --> Error en registro: Column 'telefono' cannot be null
+ERROR - 2025-07-22 23:49:18 --> mysqli_sql_exception: Column 'telefono' cannot be null in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\AuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\AuthController->doRegister()
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#13 {main}
+ERROR - 2025-07-22 23:49:18 --> Error en registro: Column 'telefono' cannot be null
+ERROR - 2025-07-22 23:51:00 --> mysqli_sql_exception: Column 'telefono' cannot be null in C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\BaseModel.php(805): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\app\Controllers\AuthController.php(84): CodeIgniter\Model->insert(Array)
+#8 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(943): App\Controllers\AuthController->doRegister()
+#9 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+#10 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\tecla\OneDrive\Documents\prueba_tecnica\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\tecla\\...')
+#13 {main}
+ERROR - 2025-07-22 23:51:00 --> Error en registro: Column 'telefono' cannot be null
